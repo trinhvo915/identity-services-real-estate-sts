@@ -5,7 +5,9 @@ import org.springframework.web.bind.annotation.*;
 import vn.identity.services.api.dto.UserDto;
 import vn.identity.services.api.entity.User;
 import vn.identity.services.api.repository.UserRepository;
+import vn.identity.services.api.service.user.UserService;
 
+import java.io.IOException;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -13,25 +15,13 @@ import java.util.List;
 @RequestMapping("/api")
 public class UserController {
 
-    private final  UserRepository userRepository;
-
+    private final UserService userService;
 
     @GetMapping(name = "/users")
-    public List<User> getUers(){
-        return  userRepository.findByUserNameEqualsIgnoreCaseAndAgeEquals("",0);
+    public void addUser() throws IOException {
+        userService.saveDiem();
     }
 
-    @PostMapping(name = "/users")
-    public User addUser(@RequestBody UserDto userDto){
-        User user = User.builder()
-                .userName(userDto.getUserName())
-                .password(userDto.getPassword())
-                .fistName(userDto.getFistName())
-                .lastName(userDto.getLastName())
-                .age(userDto.getAge())
-                .gender(userDto.getGender())
-                .address(userDto.getAddress())
-                .build();
-        return userRepository.save(user);
-    }
+
+
 }
