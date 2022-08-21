@@ -14,4 +14,7 @@ class IdentityServicesRealEstateStsApplicationTests {
     void runtimeLoads() {
     }
 
+    @Test
+    void runtimeLoads1() {
+    }
 }
