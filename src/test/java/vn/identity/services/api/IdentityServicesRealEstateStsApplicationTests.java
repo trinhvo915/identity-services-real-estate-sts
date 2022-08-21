@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class IdentityServicesRealEstateStsApplicationTests {
 
     @Test
-    void contextLoads() {
+    void contextLoads1() {
     }
 
     @Test
