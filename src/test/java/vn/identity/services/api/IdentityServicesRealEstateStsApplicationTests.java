@@ -9,5 +9,15 @@ class IdentityServicesRealEstateStsApplicationTests {
     @Test
     void contextLoads() {
     }
+    @Test
+    void contextLoads1() {
+    }
 
+    @Test
+    void contextLoads2() {
+    }
+
+    @Test
+    void contextLoads3() {
+    }
 }
