@@ -27,6 +27,7 @@ class IdentityServicesRealEstateStsApplicationTests {
     // COMMIT 5.0
     // COMMIT 5.1
     // COMMIT 5.2
+<<<<<<< HEAD
     // COMMIT 3.1
     // COMMIT 3.2
     // COMMIT 3.3
@@ -39,4 +40,5 @@ class IdentityServicesRealEstateStsApplicationTests {
     // COMMIT 4.0
     // COMMIT 4.1
     // COMMIT 4.2
+
 }
